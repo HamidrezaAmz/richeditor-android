@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     //mEditor.setBackgroundResource(R.drawable.bg);
     mEditor.setPadding(10, 10, 10, 10);
     //mEditor.setBackground("https://raw.githubusercontent.com/wasabeef/art/master/chip.jpg");
-    mEditor.setPlaceholder("Insert text here...");
+    mEditor.setPlaceholder("Insert text here please...");
     //mEditor.setInputEnabled(false);
 
     mPreview = findViewById(R.id.preview);
