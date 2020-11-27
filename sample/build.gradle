@@ -10,10 +10,6 @@ android {
     versionName VERSION_NAME
   }
 
-  // SigningConfigs
-  apply from: '../signingConfigs/debug.gradle', to: android
-  apply from: '../signingConfigs/release.gradle', to: android
-
   buildTypes {
     debug {
       debuggable true
@@ -26,7 +22,6 @@ android {
       minifyEnabled true
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
       shrinkResources true
-      signingConfig signingConfigs.release
     }
   }
 }
