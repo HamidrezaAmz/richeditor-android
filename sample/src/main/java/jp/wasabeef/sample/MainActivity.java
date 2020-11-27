@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    mEditor = (RichEditor) findViewById(R.id.editor);
+    mEditor = findViewById(R.id.editor);
     mEditor.setEditorHeight(200);
     mEditor.setEditorFontSize(22);
     mEditor.setEditorFontColor(Color.BLACK);
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     mEditor.setPlaceholder("Insert text here...");
     //mEditor.setInputEnabled(false);
 
-    mPreview = (TextView) findViewById(R.id.preview);
+    mPreview = findViewById(R.id.preview);
     mEditor.setOnTextChangeListener(new RichEditor.OnTextChangeListener() {
       @Override public void onTextChange(String text) {
         mPreview.setText(text);
